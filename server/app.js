@@ -9,10 +9,23 @@ app.use(express.json());
 app.use(express.urlencoded({extended : false}))
 
 //create
-app.post()
+app.post('/insert', (request, response) => {
+
+}) 
 
 //read
+app.get('/getAll', (request, response) => {
+    console.log('successful test')
+    response.json({
+        success: true
+    })
+})
 
 //update
 
+
 //delete
+
+app.listen(process.env.PORT, () =>{
+    console.log('APP IS RUNNING')
+})
